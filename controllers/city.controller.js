@@ -19,6 +19,8 @@ const controller= {
                     success:true,
                     cities:cities
                 })
+            }else{
+                
             }
             return res.status(404).json({
                 success:false,

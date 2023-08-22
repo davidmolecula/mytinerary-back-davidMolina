@@ -1,66 +1,115 @@
 {
     "cities":[
         {
-            "name": "buenos aires",
+            "name": "San Miguel de Allende",
             "description":"descripciones1",
-            "place": "idontknow",
+            "pais": "Mexico",
             "user":"64e14c545a63092d5405436a",
-            "image":"src/img-mindhub-example/1.jpg"
+            "image":"https://i.postimg.cc/ppdBtL2n/San-miguel-allende.jpg"
         },
         {
-            "name": "aires",
+            "name": "Charleston",
             "description":"descripciones1",
-            "place": "idontknow",
+            "pais": "Estados Unidos",
             "user":"64e14c545a63092d5405436a",
-            "image":"src/img-mindhub-example/12.jpg"
+            "image":"https://i.postimg.cc/06SfHX9W/charleston.jpg"
         },
         {
-            "name": "buenos ",
+            "name": "Chiang Mai",
             "description":"descripciones1",
-            "place": "idontknow",
+            "pais": "Tailandia",
             "user":"64e14c545a63092d5405436a",
-            "image":"src/img-mindhub-example/25.jpg"
+            "image":"https://i.postimg.cc/MnC0R01y/Chiang-Mai.jpg"
         },
         {
-            "name": "ba",
+            "name": "Kioto",
             "description":"descripciones1",
-            "place": "idontknow",
+            "pais": "Japon",
             "user":"64e14c545a63092d5405436a",
-            "image":"src/img-mindhub-example/3.jpg"
+            "image":"https://i.postimg.cc/kRJvGnKz/Kioto.jpg"
         },
         {
-            "name": "quilmes",
+            "name": "Florencia",
             "description":"descripciones1",
-            "image":"src/img-mindhub-example/7.jpg",
-            "place": "idontknow",
+            "image":"https://i.postimg.cc/phtZNQT2/Florencia.jpg",
+            "pais": "Italia",
             "user":"64e14c545a63092d5405436a"
         },
         {
             "name": "ushuaia",
             "description":"descripciones1",
-            "image":"src/img-mindhub-example/Granchacho.jpg",
-            "place": "idontknow",
+            "image":"https://i.postimg.cc/WdF6hYqN/Ushuaia.jpg",
+            "pais": "Argentina",
             "user":"64e14c545a63092d5405436a"
         },
         {
-            "name": "catamarca",
+            "name": "Hoi An",
             "description":"descripciones1",
-            "image":"src/img-mindhub-example/wallpaperflare.com_wallpaper (1).jpg",
-            "place": "idontknow",
+            "image":"https://i.postimg.cc/MnN55JJf/hoi-an.jpg",
+            "pais": "Vietnam",
             "user":"64e14c545a63092d5405436a"
         },
         {
-            "name": "malos aires",
+            "name": "Ciudad del cabo",
             "description":"descripciones1",
-            "image":"src/img-mindhub-example/wallpaperflare.com_wallpaper.jpg",
-            "place": "src/img-mindhub-example/wallpaperflare.com_wallpaper (2).jpg",
+            "image":"https://i.postimg.cc/RNCgVTTh/ciudad-del-cabo.jpg",
+            "pais": "Sudafrica",
             "user":"64e14c545a63092d5405436a"
         },
         {
-            "name": "mendoza",
+            "name": "Bariloche",
             "description":"descripciones1",
-            "image":"src/img-mindhub-example/wallpaperflare.com_wallpaper.jpg",
-            "place": "idontknow",
+            "image":"https://i.postimg.cc/yDkn0Ytz/bariloche.jpg",
+            "pais": "Argentina",
+            "user":"64e14c545a63092d5405436a"
+        },
+        {
+            "name": "Mendoza",
+            "description":"descripciones1",
+            "image":"https://i.postimg.cc/14sHJK2B/mendoza.jpg",
+            "pais": "Argentina",
+            "user":"64e14c545a63092d5405436a"
+        },
+        {
+            "name": "San Martin de los Andes",
+            "description":"descripciones1",
+            "image":"https://i.postimg.cc/LhDV71Mp/san-martin-los-andes.webp",
+            "pais": "Argentina",
+            "user":"64e14c545a63092d5405436a"
+        },
+        {
+            "name": "Quebrada de humahuaca",
+            "description":"descripciones1",
+            "image":"https://i.postimg.cc/qzmjtCmL/jujuy-Serran-as-del-Hornocal.jpg",
+            "pais": "Argentina",
+            "user":"64e14c545a63092d5405436a"
+        },
+        {
+            "name": "Rio de Janeiro",
+            "description":"descripciones1",
+            "image":"https://i.postimg.cc/pp1JVMTc/rio.webp",
+            "pais": "Brasil",
+            "user":"64e14c545a63092d5405436a"
+        },
+        {
+            "name": "Londres",
+            "description":"descripciones1",
+            "image":"https://i.postimg.cc/k6Fy7V6W/londres.jpg",
+            "pais": "Inglaterra",
+            "user":"64e14c545a63092d5405436a"
+        },
+        {
+            "name": "Dublin",
+            "description":"descripciones1",
+            "image":"https://i.postimg.cc/vDtPsKfC/dublin.jpg",
+            "pais": "Irlanda",
+            "user":"64e14c545a63092d5405436a"
+        },
+        {
+            "name": "Agra",
+            "description":"descripciones1",
+            "image":"https://i.postimg.cc/jncnFPWk/Agra.jpg",
+            "pais": "India",
             "user":"64e14c545a63092d5405436a"
         }
     ]
