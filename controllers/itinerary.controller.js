@@ -1,110 +1,98 @@
-import City from '../models/City.js'
+import Itinerary from '../models/Itinerary.js'
 
 const controller= {
-    getCities:async (req,res) => {
+    getItineraries:async (req,res) => {
         let queries={}
         console.log(req.query)
-        if(req.query.name)
-        {
-            queries.name=new RegExp(`^${req.query.name}`, 'i')
-        }
-        if(req.query.description)
-        {
-            queries.description=req.query.description
-        }
         try{
-            const cities=await City.find(queries).populate('user')
-            
-            if(cities.length>0){
-                cities.map((city)=>console.log(city._id))
-                
+            const itineraries=await Itinerary.find(queries).populate('cities')
+            if(itineraries.length>0){
                 return res.status(200).json({
                     success:true,
-                    cities:cities
-                }
-                )
+                    itineraries:itineraries
+                })
             }else{
                 
             }
             return res.status(404).json({
                 success:false,
-                message:'Error al encontrar la ciudad'
+                message:'Error al encontrar la itinerary'
             })
             
         } catch(error){
             console.log(error)
             return res.status(500).json({
                 success: false,
-                message: 'Error al obtener las ciudades'
+                message: 'Error al obtener las itineraries'
             })
         }
         
         
     },
-    getCityById: async(req,res)=>{
+    getItineraryById: async(req,res)=>{
         try{
-            const oneCity= await City.findById(req.params.id)
+            const oneItinerary= await Itinerary.findById(req.params.id)
 
-            if(oneCity){
+            if(oneItinerary){
                 return res.status(200).json({
                     success:true,
-                    city: oneCity
+                    itinerary: oneItinerary
                 })
             }
             return res.status(404).json({
                 success:false,
-                message:'No se encontro la ciudad'
+                message:'No se encontro la itinerary'
             })
         }catch(error){
             console.log(error)
             return res.status(500).json({
                 success: false,
-                message: 'Error al obtener la city'
+                message: 'Error al obtener la itinerary'
             })
         }
     },
-    createCity: async (req,res)=>{ 
-        try{const newCity=await City.create(req.body);
+    createItinerary: async (req,res)=>{ 
+        try{const newItinerary=await Itinerary.create(req.body);
             
             return res.status(201).json({
                 success:true,
-                message:'City created'
+                message:'itinerary created'
             })
         } catch (error){
             console.log(error)
             return res.status(500).json({
                 success:false,
-                message: "Error al crear la ciudad"
+                message: "Error al crear la itinerary"
             })
         }
     },
-    updateCity: async (req,res) =>{
+    updateItinerary: async (req,res) =>{
         try{
-            await City.updateOne({_id: req.params.id},req.body)
+            await Itinerary.updateOne({_id: req.params.id},req.body)
             return res.status(200).json({
                 success:true,
-                message:'La City se actualizo con exito'
+                message:'La itinerary se actualizo con exito'
             })
         }catch(error) {
             console.log(error)
             return res.status(500).json({
                 success:false,
-                message:'Error al actualizar la ciudad'
+                message:'Error al actualizar la itinerary'
             })
         }
     },
-    deleteCity: async (req,res)=> {
+    deleteItinerary: async (req,res)=> {
         try{
-            await City.deleteOne({_id: req.params.id})
+            await Itinerary.deleteOne({_id: req.params.id})
             return res.status(200).json({
                 success:true,
-                message:'La City se elimino con exito'
+                message:'La itinerary se elimino con exito'
             })
         }catch(error){
             console.log(error)
             return res.status(500).json({
                 success:false,
-                message:'Error al eliminar la City'
+                message:'Error al eliminar la itinerary'
             })
         }
     }
@@ -113,5 +101,3 @@ const controller= {
 
 
 export default controller;
-
-
